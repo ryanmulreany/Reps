@@ -59,7 +59,7 @@ public interface IExercise
  * @author Kyle
  * @version Nov 10, 2014
  */
-class Squats
+class WeightSquats
     extends RectangleShape
     implements IExercise
 {
@@ -67,20 +67,20 @@ class Squats
     /**
      * Create a new Squats object.
      */
-    public Squats()
+    public WeightSquats()
     {
     }
 
 
     public String name()
     {
-        return "Squats";
+        return "WeightSquats";
     }
 
 
     public Image gif()
     {
-        setImage("Squats");
+        setImage("WeightSquats");
         return gif.getImage();
     }
 
@@ -89,5 +89,45 @@ class Squats
     {
         return 6;
     }
+
+}
+
+//-------------------------------------------------------------------------
+/**
+* represents a squat exercise with a gif and region of body.
+*
+* @author Kyle
+* @version Nov 10, 2014
+*/
+class BenchPress
+ extends RectangleShape
+ implements IExercise
+{
+ // ----------------------------------------------------------
+ /**
+  * Create a new Squats object.
+  */
+ public BenchPress()
+ {
+ }
+
+
+ public String name()
+ {
+     return "BenchPress";
+ }
+
+
+ public Image gif()
+ {
+     setImage("BenchPress");
+     return gif.getImage();
+ }
+
+
+ public int type()
+ {
+     return 2;
+ }
 
 }
