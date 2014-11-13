@@ -31,15 +31,6 @@ public interface IExercise
 
     // ----------------------------------------------------------
     /**
-     * sets the descriptionLabel to the description of the work out
-     *
-     * @return the string description of the work out
-     */
-    public String description();
-
-
-    // ----------------------------------------------------------
-    /**
      * Updates the gif display to the current work out gif
      *
      * @return gif of the work out
@@ -63,8 +54,7 @@ public interface IExercise
 
 // -------------------------------------------------------------------------
 /**
- * Write a one-sentence summary of your class here. Follow it with additional
- * details about its purpose, what abstraction it represents, and how to use it.
+ * represents a squat exercise with a gif and region of body.
  *
  * @author Kyle
  * @version Nov 10, 2014
@@ -85,13 +75,6 @@ class Squats
     public String name()
     {
         return "Squats";
-    }
-
-
-    public String description()
-    {
-        return "With your back straight and chest out, bend your knees \nuntil "
-            + "your thights are horizontal with the ground";
     }
 
 
