@@ -109,6 +109,7 @@ class BenchPress
   */
  public BenchPress()
  {
+
  }
 
 
