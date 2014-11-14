@@ -1,5 +1,6 @@
 package com.GroupProject.reps;
 
+
 import java.util.LinkedList;
 
 // -------------------------------------------------------------------------
@@ -21,7 +22,6 @@ public class ExerciseLists
     private LinkedList<IExercise> backList;
     private LinkedList<IExercise> abdominalList;
     private LinkedList<IExercise> legsList;
-    private LinkedList<LinkedList> orderedExerciseList;
 
 
     // ----------------------------------------------------------
@@ -33,13 +33,16 @@ public class ExerciseLists
         exerciseList = new LinkedList<IExercise>();
         exerciseList.add(new WeightSquats());
         exerciseList.add(new BenchPress());
+        this.sortLists();
     }
     // ----------------------------------------------------------
     /**
      * sorts the exercises into sorted lists based on the area of the body
      */
-    public void sortLists()
+    private void sortLists()
     {
+        //sorts the exercises into their separate lists based on the body
+        //regions
         for (IExercise ex: exerciseList)
         {
             if (ex.type() == 1)
@@ -67,17 +70,77 @@ public class ExerciseLists
                 legsList.add(ex);
             }
         }
-        orderedExerciseList = new LinkedList<LinkedList>();
-        orderedExerciseList.add(shouldersList);
-        orderedExerciseList.add(chestList);
-        orderedExerciseList.add(armsList);
-        orderedExerciseList.add(backList);
-        orderedExerciseList.add(abdominalList);
-        orderedExerciseList.add(legsList);
-
     }
 
 
+ // ----------------------------------------------------------
+    /**
+     * returns the Exercise list
+     * @return the Exercise list
+     */
+    public LinkedList<IExercise> getExerciseList()
+    {
+        return exerciseList;
+    }
 
 
+    // ----------------------------------------------------------
+    /**
+     * returns the shoulders list of exercises
+     * @return the shoulders list of exercises
+     */
+    public LinkedList<IExercise> getShouldersList()
+    {
+        return shouldersList;
+    }
+
+ // ----------------------------------------------------------
+    /**
+     * returns the chest list of exercises
+     * @return the chest list of exercises
+     */
+    public LinkedList<IExercise> getChestList()
+    {
+        return chestList;
+    }
+
+ // ----------------------------------------------------------
+    /**
+     * returns the arms list of exercises
+     * @return the arms list of exercises
+     */
+    public LinkedList<IExercise> getArmsList()
+    {
+        return armsList;
+    }
+
+ // ----------------------------------------------------------
+    /**
+     * returns the back list of exercises
+     * @return the back list of exercises
+     */
+    public LinkedList<IExercise> getBackList()
+    {
+        return backList;
+    }
+
+ // ----------------------------------------------------------
+    /**
+     * returns the abdominal list of exercises
+     * @return the abdominal list of exercises
+     */
+    public LinkedList<IExercise> getAbdominalList()
+    {
+        return abdominalList;
+    }
+
+ // ----------------------------------------------------------
+    /**
+     * returns the legs list of exercises
+     * @return the legs list of exercises
+     */
+    public LinkedList<IExercise> getLegsList()
+    {
+        return legsList;
+    }
 }
