@@ -59,6 +59,7 @@ public class MainActivity extends Activity
                     //The intent is so the Android Manifest knows what to do.
                     startActivity(new Intent(
                         "com.GroupProject.reps.CLEARSCREEN"));
+
                 }
                 catch (InterruptedException e)
                 {
