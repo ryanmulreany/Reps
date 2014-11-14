@@ -222,124 +222,130 @@ class ToesToBar
 }
 
 
-//-------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------
 /**
-* represents a Bicep Curls exercise with a gif and region of body.
-*
-* @author Kyle
-* @version Nov 10, 2014
-*/
+ * represents a Bicep Curls exercise with a gif and region of body.
+ *
+ * @author Kyle
+ * @version Nov 10, 2014
+ */
 class BicepCurls
- extends RectangleShape
- implements IExercise
+    extends RectangleShape
+    implements IExercise
 {
-//----------------------------------------------------------
- /**
-  * Create a new BicepCurls object.
-  */
- public BicepCurls()
- {
-     setImage("BicepCurls");
- }
+// ----------------------------------------------------------
+    /**
+     * Create a new BicepCurls object.
+     */
+    public BicepCurls()
+    {
+        setImage("BicepCurls");
+    }
 
 
- public String name()
- {
-     return "Bicep Curls";
- }
+    public String name()
+    {
+        return "Bicep Curls";
+    }
 
 
- public Image gif()
- {
-     return gif.getImage();
- }
+    public Image gif()
+    {
+        return gif.getImage();
+    }
 
 
- public int type()
- {
-     return 3;
- }
+    public int type()
+    {
+        return 3;
+    }
 
 }
 
 
-//-------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------
 /**
-* represents a Up Right Rows exercise with a gif and region of body.
-*
-* @author Kyle
-* @version Nov 10, 2014
-*/
+ * represents a Up Right Rows exercise with a gif and region of body.
+ *
+ * @author Kyle
+ * @version Nov 10, 2014
+ */
 class UpRightRows
-extends RectangleShape
-implements IExercise
+    extends RectangleShape
+    implements IExercise
 {
-//----------------------------------------------------------
+// ----------------------------------------------------------
+    /**
+     * Create a new Up Right Rows object.
+     */
+    public UpRightRows()
+    {
+        setImage("UpRightRows");
+    }
+
+
+    public String name()
+    {
+        return "Up-Right Rows";
+    }
+
+
+    public Image gif()
+    {
+        return gif.getImage();
+    }
+
+
+    public int type()
+    {
+        return 4;
+    }
+
+}
+
+
+
+
+// -------------------------------------------------------------------------
 /**
-* Create a new Up Right Rows object.
-*/
-public UpRightRows()
-{
-   setImage("UpRightRows");
-}
-
-
-public String name()
-{
-   return "Up-Right Rows";
-}
-
-
-public Image gif()
-{
-   return gif.getImage();
-}
-
-
-public int type()
-{
-   return 4;
-}
-
-}
-
-
-//-------------------------------------------------------------------------
-/**
-* represents a Thrusters exercise with a gif and region of body.
-*
-* @author Kyle
-* @version Nov 10, 2014
-*/
+ * represents a Thrusters exercise with a gif and region of body.
+ *
+ * @author Kyle
+ * @version Nov 10, 2014
+ */
 class Thrusters
-extends RectangleShape
-implements IExercise
+    extends RectangleShape
+    implements IExercise
 {
-//----------------------------------------------------------
-/**
-* Create a new Thrusters object.
-*/
-public Thrusters()
-{
- setImage("Thrusters");
-}
+// ----------------------------------------------------------
+    /**
+     * Create a new Thrusters object.
+     */
+    public Thrusters()
+    {
+        setImage("Thrusters");
+    }
 
 
-public String name()
-{
- return "Thrusters";
-}
+    public String name()
+    {
+        return "Thrusters";
+    }
 
 
-public Image gif()
-{
- return gif.getImage();
-}
+    public Image gif()
+    {
+        return gif.getImage();
+    }
 
 
-public int type()
-{
- return 6;
-}
+    public int type()
+    {
+        return 6;
+    }
 
 }

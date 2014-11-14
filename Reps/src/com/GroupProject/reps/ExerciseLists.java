@@ -31,13 +31,15 @@ public class ExerciseLists
     public ExerciseLists()
     {
         exerciseList = new LinkedList<IExercise>();
-        exerciseList.add(new WeightedSquats());
+        //adds all of the exercises to the list
         exerciseList.add(new BenchPress());
-        exerciseList.add(new ToesToBar());
-        exerciseList.add(new Thrusters());
         exerciseList.add(new BicepCurls());
-        exerciseList.add(new UpRightRows());
         exerciseList.add(new ShoulderPress());
+        exerciseList.add(new Thrusters());
+        exerciseList.add(new ToesToBar());
+        exerciseList.add(new UpRightRows());
+        exerciseList.add(new WeightedSquats());
+
         this.sortLists();
     }
     // ----------------------------------------------------------
