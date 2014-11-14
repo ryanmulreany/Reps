@@ -42,7 +42,7 @@ public interface IExercise
     /**
      * Returns a number which represents the area of the body which this
      * exercise works out. 1 = Shoulders 2 = Chest 3 = Arms 4 = Back 5 =
-     * Abdominal 6 = Thighs 7 = Calves
+     * Abdominal 6 = Legs
      *
      * @return the number representation of the area being worked out.
      */
@@ -94,7 +94,7 @@ class WeightSquats
 
 //-------------------------------------------------------------------------
 /**
-* represents a squat exercise with a gif and region of body.
+* represents a bench press exercise with a gif and region of body.
 *
 * @author Kyle
 * @version Nov 10, 2014
@@ -105,7 +105,7 @@ class BenchPress
 {
  // ----------------------------------------------------------
  /**
-  * Create a new Squats object.
+  * Create a new bench press object.
   */
  public BenchPress()
  {
